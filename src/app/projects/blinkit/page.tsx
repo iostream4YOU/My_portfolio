@@ -298,29 +298,57 @@ export default function BlinkitDashboard() {
             target="_blank"
             className="inline-flex items-center gap-1 rounded-lg border border-black/10 dark:border-white/15 px-3 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/5"
           >
-            Power BI file & data <ArrowUpRight className="w-4 h-4" />
+            GitHub <ArrowUpRight className="w-4 h-4" />
           </Link>
+          <a
+            href="/Blinkit-Data-Analysis.pbix"
+            download
+            className="inline-flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold text-black"
+            style={{ background: ACCENT }}
+          >
+            Download .pbix <ArrowUpRight className="w-4 h-4" />
+          </a>
         </div>
       </div>
 
-      {POWERBI_EMBED_URL && (
-        <div className="mb-10">
-          <p className="text-sm text-neutral-500 mb-3">
-            The original Power BI report, live. Use its slicers directly.
-          </p>
-          <div className="relative w-full overflow-hidden rounded-2xl border border-black/10 dark:border-white/10" style={{ aspectRatio: "16/9.5" }}>
+      <section className="mb-12">
+        <h2 className="text-xl md:text-2xl font-bold mb-1">The original Power BI report</h2>
+        <p className="text-sm text-neutral-500 mb-4">
+          {POWERBI_EMBED_URL
+            ? "Live from Power BI. Click any bar or slicer to cross-filter the whole report."
+            : "Recorded in Power BI: clicking a bar or table row cross-filters every visual. Download the .pbix to open it in Power BI Desktop."}
+        </p>
+        <div
+          className="relative w-full overflow-hidden rounded-2xl border border-black/10 dark:border-white/10 bg-neutral-900"
+          style={{ aspectRatio: POWERBI_EMBED_URL ? "16/9.5" : "1280/770" }}
+        >
+          {POWERBI_EMBED_URL ? (
             <iframe
               title="Blinkit Sales Analytics - Power BI"
               src={POWERBI_EMBED_URL}
               className="absolute inset-0 w-full h-full"
               allowFullScreen
             />
-          </div>
-          <p className="text-sm text-neutral-500 mt-8 mb-2">
-            The same analysis rebuilt as a lightweight web dashboard:
-          </p>
+          ) : (
+            <video
+              className="absolute inset-0 w-full h-full"
+              src="/assets/projects-screenshots/blinkit/powerbi-demo.mp4"
+              poster="/assets/projects-screenshots/blinkit/poster.jpg"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+              aria-label="Power BI report being cross-filtered by outlet tier and outlet type"
+            />
+          )}
         </div>
-      )}
+      </section>
+
+      <h2 className="text-xl md:text-2xl font-bold mb-1">Now try it yourself</h2>
+      <p className="text-sm text-neutral-500 mb-4">
+        The same analysis rebuilt for the web. Pick a filter and every number below recalculates.
+      </p>
 
       {error && <p className="text-red-500">Couldn&apos;t load the dataset. Please refresh the page.</p>}
       {!view && !error && <p className="text-neutral-500">Loading 8,523 rows…</p>}
