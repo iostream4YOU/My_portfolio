@@ -23,11 +23,6 @@ const SkillsSection = () => {
         <p className="mx-auto mt-4 line-clamp-4 max-w-3xl font-normal text-base text-center text-neutral-300">
           (hint: press a key)
         </p>
-        <p className="mx-auto mt-6 max-w-3xl px-4 text-center text-sm md:text-base text-neutral-600 dark:text-neutral-300 font-sans">
-          Python · FastAPI · SQL · JavaScript/TypeScript · React · Node.js ·
-          Docker · GitHub Actions · LangChain · LangGraph · CrewAI · TensorFlow ·
-          Keras · Pandas · Power BI · Selenium · Firestore · MongoDB
-        </p>
       </div>
     </section>
   );

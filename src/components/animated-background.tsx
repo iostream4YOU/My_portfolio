@@ -6,7 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 import { Skill, SkillNames, SKILLS } from "@/data/constants";
 
-const HIDDEN_KEYCAPS = ["vue", "wordpress", "nginx", "aws", "vim", "postgres"];
 import { sleep } from "@/lib/utils";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { usePreloader } from "./preloader";
@@ -292,14 +291,6 @@ const AnimatedBackground = () => {
     if (!splineApp || isLoading || keyboardRevealed) return;
     revealKeyCaps();
   }, [splineApp, isLoading, activeSection]);
-  // The 3D keyboard ships with keycaps for tools I don't use; hide them.
-  const hideUnusedKeycaps = () => {
-    if (!splineApp) return;
-    for (const name of HIDDEN_KEYCAPS) {
-      const keycap = splineApp.findObjectByName(name);
-      if (keycap) keycap.visible = false;
-    }
-  };
   const revealKeyCaps = async () => {
     if (!splineApp) return;
     const kbd = splineApp.findObjectByName("keyboard");
@@ -307,7 +298,6 @@ const AnimatedBackground = () => {
     kbd.visible = false;
     await sleep(400);
     kbd.visible = true;
-    hideUnusedKeycaps();
     setKeyboardRevealed(true);
     console.log(activeSection);
     gsap.fromTo(
