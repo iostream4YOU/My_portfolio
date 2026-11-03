@@ -1,11 +1,11 @@
 const footer: { title: string; href: string }[] = [
   {
-    title: "Blog",
-    href: "/blogs",
+    title: "Resume",
+    href: "/Rishikesh_Akkalwar_Resume.pdf",
   },
   {
-    title: "Newsletter",
-    href: "/news",
+    title: "Email me",
+    href: "mailto:rushikeshakkalwar@gmail.com",
   },
 ];
 

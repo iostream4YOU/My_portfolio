@@ -17,7 +17,7 @@ import { cn } from "@/lib/utils";
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="max-w-7xl mx-auto md:h-[130vh]">
+    <section id="projects" className="max-w-7xl mx-auto md:min-h-[130vh] pb-24">
       <Link href={"#projects"}>
         <h2
           className={cn(
@@ -29,7 +29,7 @@ const ProjectsSection = () => {
           Projects
         </h2>
       </Link>
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10">
         {projects.map((project, index) => (
           <Modall key={project.src} project={project} />
         ))}

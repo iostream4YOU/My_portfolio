@@ -25,6 +25,16 @@ import {
 } from "react-icons/ri";
 import {
   SiExpress,
+  SiFastapi,
+  SiGithubactions,
+  SiKeras,
+  SiPandas,
+  SiPowerbi,
+  SiPrometheus,
+  SiPython,
+  SiSelenium,
+  SiSqlite,
+  SiTensorflow,
   SiJavascript,
   SiKubuntu,
   SiPm2,
@@ -43,31 +53,91 @@ import { TbTerminal2 } from "react-icons/tb";
 const CONTACT_LINKS = [
   {
     name: "Email",
-    content: "rushikeshakkalwar@gmail",
+    content: "rushikeshakkalwar@gmail.com",
     href: "mailto:rushikeshakkalwar@gmail.com",
     icon: <FaEnvelope height={"50px"} />,
   },
   {
     name: "Phone",
-    content: "1234567890",
-    href: "tel:1234567890",
+    content: "+91 75584 63339",
+    href: "tel:+917558463339",
     icon: <FaPhone height={"50px"} />,
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/rishi-a-30a3a0260/",
-    content: "/Rushikesh-Akkalwar",
+    content: "/in/rishi-a-30a3a0260",
     icon: <FaLinkedin height={"50px"} />,
   },
   {
     name: "GitHub",
     href: "https://github.com/iostream4YOU",
-    content: "/Rushikesh-Akkalwar",
+    content: "/iostream4YOU",
     icon: <FaGithub height={"50px"} />,
   },
 ];
 
 const TOOLS = [
+  {
+    name: "Python",
+    content: "Python",
+    icon: <SiPython size={"50px"} color={"#3776ab"} />,
+    color: "#3776ab",
+  },
+  {
+    name: "FastAPI",
+    content: "FastAPI",
+    icon: <SiFastapi size={"50px"} color={"#009688"} />,
+    color: "#009688",
+  },
+  {
+    name: "TensorFlow",
+    content: "TensorFlow",
+    icon: <SiTensorflow size={"50px"} color={"#ff6f00"} />,
+    color: "#ff6f00",
+  },
+  {
+    name: "Keras",
+    content: "Keras",
+    icon: <SiKeras size={"50px"} color={"#d00000"} />,
+    color: "#d00000",
+  },
+  {
+    name: "Pandas",
+    content: "Pandas",
+    icon: <SiPandas size={"50px"} color={"#e70488"} />,
+    color: "#e70488",
+  },
+  {
+    name: "Power BI",
+    content: "Power BI",
+    icon: <SiPowerbi size={"50px"} color={"#f2c811"} />,
+    color: "#f2c811",
+  },
+  {
+    name: "Selenium",
+    content: "Selenium",
+    icon: <SiSelenium size={"50px"} color={"#43b02a"} />,
+    color: "#43b02a",
+  },
+  {
+    name: "SQLite",
+    content: "SQLite",
+    icon: <SiSqlite size={"50px"} color={"#0f80cc"} />,
+    color: "#0f80cc",
+  },
+  {
+    name: "GitHub Actions",
+    content: "GitHub Actions",
+    icon: <SiGithubactions size={"50px"} color={"#2088ff"} />,
+    color: "#2088ff",
+  },
+  {
+    name: "Prometheus",
+    content: "Prometheus",
+    icon: <SiPrometheus size={"50px"} color={"#e6522c"} />,
+    color: "#e6522c",
+  },
   {
     name: "JavaScript",
     content: "JavaScript is a high-level, interpreted programming language",
@@ -111,28 +181,10 @@ const TOOLS = [
     color: "#2496ed",
   },
   {
-    name: "NginX",
-    content: "Next.js is a React framework for production",
-    icon: <DiNginx size={"50px"} color="#008000" />,
-    color: "#008000",
-  },
-  {
-    name: "Vue.js",
-    content: "Next.js is a React framework for production",
-    icon: <FaVuejs size={"50px"} color="#41b883" />,
-    color: "#41b883",
-  },
-  {
     name: "Express.js",
     content: "Next.js is a React framework for production",
     icon: <SiExpress size={"50px"} color="#fff" />,
     color: "#000000",
-  },
-  {
-    name: "PostgreSQL",
-    content: "Next.js is a React framework for production",
-    icon: <DiPostgresql size={"50px"} color="#336791" />,
-    color: "#336791",
   },
   {
     name: "MongoDB",
@@ -171,28 +223,10 @@ const TOOLS = [
     color: "#007acc",
   },
   {
-    name: "VIM",
-    content: "Next.js is a React framework for production",
-    icon: <DiVim size={"50px"} color="#fff" />,
-    color: "#000000",
-  },
-  {
-    name: "Prettier",
-    content: "Next.js is a React framework for production",
-    icon: <SiPrettier size={"50px"} color="#f7b93c" />,
-    color: "#f7b93c",
-  },
-  {
     name: "NPM",
     content: "Next.js is a React framework for production",
     icon: <DiNpm size={"50px"} color="#CB3837" />,
     color: "#CB3837",
-  },
-  {
-    name: "Yarn",
-    content: "Next.js is a React framework for production",
-    icon: <FaYarn size={"50px"} color="#2C8EBB" />,
-    color: "#2C8EBB",
   },
   {
     name: "Vercel",
@@ -207,22 +241,9 @@ const TOOLS = [
     color: "#000000",
   },
   {
-    name: "Kubuntu",
-    content: "Next.js is a React framework for production",
-    // give me correct color for  kubuntu
-    icon: <SiKubuntu size={"50px"} color="#0077C4" />,
-    color: "#000000",
-  },
-  {
     name: "Terminal",
     content: "Next.js is a React framework for production",
     icon: <TbTerminal2 size={"50px"} color="#fff" />,
-    color: "#000000",
-  },
-  {
-    name: "AWS",
-    content: "Next.js is a React framework for production",
-    icon: <FaAws size={"50px"} color="#3f51b5" />,
     color: "#000000",
   },
 ];
@@ -251,9 +272,9 @@ function Page() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:items-center ml-10 md:ml-20 lg:ml-0">
-                <p className="text-center text-xl">Naresh Khatri</p>
+                <p className="text-center text-xl">Rishikesh Akkalwar</p>
                 <div className="text-xs bg-zinc-700 w-fit px-3 py-1 rounded-full">
-                  Web Developer
+                  Software Engineer · Backend, Data &amp; AI
                 </div>
               </div>
             </div>
@@ -287,16 +308,24 @@ function Page() {
           >
             <h1 className="text-3xl mb-10 lg:md-20">About me</h1>
             <p className="mb-10 text-roboto">
-              Hey there! I&apos;m Rushikesh, a Fullstack developer passionate about
-              creating meaningful digital experiences. With great in Web
-              development, I thrive on turning ideas into reality through coding
-              and design. My journey began with a fascination for technology and
-              a drive to make a positive impact.
+              Hi, I&apos;m Rishikesh, a 2026 B.Tech graduate in Computer Science
+              and Engineering (AI &amp; ML) from Woxsen University, Hyderabad. I
+              build backend services, data pipelines and LLM-powered tools, and I
+              like the part where a messy real-world process becomes software
+              that runs reliably every day.
             </p>
             <p className="mb-10">
-              When I&apos;m not coding, you can find me [Your
-              Interests/Hobbies], exploring new technologies, or sipping coffee
-              while brainstorming my next project.
+              In my 10-month product development internship at VeePhoenix
+              Compliance, working for a US healthcare client, I was the sole
+              developer of a FastAPI audit platform that reconciles orders across a
+              157-agency, 9-EHR RPA fleet, built an EHR data pipeline, and wrote a Medicare billing
+              rules engine that flagged 38% of lines for rework in its pilot.
+            </p>
+            <p className="mb-10">
+              Away from the keyboard I&apos;m the lead vocalist of my university
+              music club, a tournament chess player, and I served two years on
+              the Woxsen Student Council. I reached the Top 50 in the Tata
+              Crucible Campus Quiz 2023.
             </p>
             <h1 className="text-3xl mb-10 lg:md-20">Stuff I use</h1>
             <div className="mb-5">

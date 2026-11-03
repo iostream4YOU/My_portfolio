@@ -21,6 +21,16 @@ const links: Link[] = [
     href: '/#projects',
     thumbnail: '/assets/nav-link-previews/projects.png'
   },
+  {
+    title: 'Experience',
+    href: '/#experience',
+    thumbnail: '/assets/nav-link-previews/projects.png'
+  },
+  {
+    title: 'Live Dashboard',
+    href: '/projects/blinkit',
+    thumbnail: '/assets/projects-screenshots/blinkit/cover.png'
+  },
   // {
   //   title: 'Skills',
   //   href: '/skills',
@@ -31,11 +41,6 @@ const links: Link[] = [
   //   href: '/testimonials',
   //   thumbnail: '/assets/nav-link-previews/testimonials.png'
   // },
-  {
-    title: 'Blogs',
-    href: '/blogs',
-    thumbnail: '/assets/nav-link-previews/blog.png',
-  },
   {
     title: 'Contact',
     href: '/#contact',

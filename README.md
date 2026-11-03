@@ -1,74 +1,32 @@
-# 🚀 My Portfolio Website
+# Rishikesh Akkalwar — Portfolio
 
-Welcome to the repository for my personal portfolio website! This is where I showcase my skills, projects, and a bit of my personality through jaw-dropping 3D animations, slick interactions, and fluid motion. If you're into creative web design, you're in the right place.
+Live site: **https://rishikeshakkalwar.vercel.app/**
 
-![Portfolio Preview](public/assets/projects-screenshots/portfolio/landing.png)
+I'm a 2026 B.Tech graduate in Computer Science and Engineering (AI & ML) from Woxsen University, Hyderabad. I build backend services, data pipelines and LLM tools. This site shows that work, with demos you can open and use.
 
-## 🔥 Features
+## What's on the site
 
-- **3D Animations**: Custom-made interactive keyboard using Spline with skills as keycaps that reveal titles and descriptions on hover.
-- **Slick Interactions**: Powered by GSAP and Framer Motion for smooth animations on scroll, hover, and element reveal.
-- **Space Theme**: Particles on a dark background to simulate a cosmic environment, making the experience out of this world.
-- **Responsive Design**: Fully responsive across all devices to ensure the best user experience.
-- **Innovative Web Design**: Combining creativity with functionality to push the boundaries of modern web design.
+| Project | What it is | Try it |
+|---|---|---|
+| Blinkit Sales Analytics | My Power BI analysis of 8,523 grocery items, rebuilt as an interactive web dashboard with live filters | [Open the dashboard](https://rishikeshakkalwar.vercel.app/projects/blinkit) |
+| Buy or Wait? | LLM affordability agent built in 24 hours at HackerRank Orchestrate 2026; 24/25 on status, 25/25 on payment method | [Repository](https://github.com/iostream4YOU/hackerrank-orchestrate-buy-or-wait) |
+| Coding Ducks | Coding practice platform: problems, UI battles, contests and a code playground | [Live](https://codingducksbyrishi.vercel.app/) |
+| CodeRoom | Real-time collaborative code editor with chat over Socket.io | [Live](https://coderoom-alpha.vercel.app/) |
+| Chess Assist Teardown | Babel AST deobfuscator (1.1 MB → ~9,800 readable lines) and 8 security write-ups | [Repository](https://github.com/iostream4YOU/chess-assist-teardown) |
 
-## 🛠️ Tech Stack
+The site also covers my product development internship at VeePhoenix Compliance (FastAPI audit platform, EHR ETL, Medicare billing rules engine) and links every certification to its verification page.
 
-- **Frontend**: Next.js, React, Tailwind CSS, Shadcn, Aceternity UI
-- **Animations**: GSAP, Framer Motion, Spline Runtime
-- **Misc**: Resend, Socketio, Zod
+## Built with
 
-## 🚀 Getting Started
+Next.js 14, TypeScript, Tailwind CSS, Framer Motion and Spline. The site started from an open-source Next.js portfolio template, which I customised with my own content, projects and the Blinkit dashboard (`src/app/projects/blinkit`).
 
-### Prerequisites
+## Run locally
 
-- Node.js (v14+)
-- npm or yarn
+```bash
+yarn install
+yarn dev
+```
 
-### Installation
+## Contact
 
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/iostream4YOU/rishi_portfolio.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```bash
-    cd Portfolio
-    ```
-
-3. Install dependencies:
-
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
-
-4. Run the development server:
-
-    ```bash
-    npm run dev
-    # or
-    yarn dev
-    ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the magic!
-
-## 🚀 Deployment
-
-This site is deployed on Vercel. For your own deployment, follow these steps:
-
-1. Push your code to a GitHub repository.
-2. Connect your repository to Vercel.
-3. Vercel will handle the deployment process.
-
-## 🤝 Contributing
-
-If you'd like to contribute or suggest improvements, feel free to open an issue or submit a pull request. All contributions are welcome!
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+rushikeshakkalwar@gmail.com · [LinkedIn](https://www.linkedin.com/in/rishi-a-30a3a0260/) · [GitHub](https://github.com/iostream4YOU)

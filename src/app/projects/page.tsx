@@ -24,19 +24,6 @@ creativity soar.`,
       "/assets/projects-screenshots/codingducks/5.png",
     ],
   },
-  {
-    id: 2,
-    name: "Ghost Chat",
-    description: `GhostChat is an anonymous messaging app that allows users to connect without revealing their identities. 
-Join the community for intriguing conversations and mysterious encounters.`,
-    link: "https://ghostchat-by-rishi.vercel.app/",
-    images: [
-      "/assets/projects-screenshots/ghostchat/1.png",
-      "/assets/projects-screenshots/ghostchat/2.png",
-      "/assets/projects-screenshots/ghostchat/3.png",
-      "/assets/projects-screenshots/ghostchat/4.png",
-    ],
-  },
 ];
 function Page() {
   return (
