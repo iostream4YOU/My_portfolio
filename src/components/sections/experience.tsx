@@ -16,7 +16,22 @@ const WORK = {
   stack: ["Python", "FastAPI", "Firestore", "React", "Vite", "Docker", "GitHub Actions", "Selenium", "Prometheus"],
 };
 
-const CERTS: { name: string; issuer: string; year: string; href: string; featured?: boolean }[] = [
+const CERTS: { name: string; issuer: string; year: string; href: string; featured?: boolean; note?: string }[] = [
+  {
+    name: "Oracle Certified Foundations Associate, Agentic AI",
+    issuer: "Oracle",
+    year: "2026",
+    href: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=30a0c07b80e8b751136d5da433296094fd20bef3ff5555199dd867e4bbdc1658",
+    featured: true,
+    note: "Proctored exam 1Z0-1157-26 · scored 98% · valid to Nov 2028",
+  },
+  {
+    name: "Academy Accreditation: Generative AI Fundamentals",
+    issuer: "Databricks",
+    year: "2026",
+    href: "https://credentials.databricks.com/200441704",
+    featured: true,
+  },
   {
     name: "Building AI Agents and Agentic Workflows (Specialization)",
     issuer: "IBM · Coursera",
@@ -37,6 +52,7 @@ const CERTS: { name: string; issuer: string; year: string; href: string; feature
   { name: "REST API (Intermediate)", issuer: "HackerRank", year: "2025", href: "https://www.hackerrank.com/certificates/aadc5219ad9e" },
   { name: "JavaScript (Intermediate)", issuer: "HackerRank", year: "2025", href: "https://www.hackerrank.com/certificates/652877ae338e" },
   { name: "Software Engineer Intern", issuer: "HackerRank", year: "2025", href: "https://www.hackerrank.com/certificates/821af693da61" },
+  { name: "Python Essentials 1", issuer: "Cisco Networking Academy", year: "2026", href: "https://www.netacad.com/recognitions/verify/74de7daa-4d2a-4093-8a9e-0458ee9c97ef" },
   { name: "Python (Basic)", issuer: "HackerRank", year: "2026", href: "https://www.hackerrank.com/certificates/36c32175c0c3" },
   { name: "Problem Solving (Basic)", issuer: "HackerRank", year: "2025", href: "https://www.hackerrank.com/certificates/3e689583ebd8" },
   { name: "Operating Systems Fundamentals", issuer: "Akamai · Coursera", year: "2024", href: "https://coursera.org/verify/H3QS2VRQQSKX" },
@@ -141,6 +157,7 @@ const ExperienceSection = () => {
                 <p className="text-sm text-neutral-500 mt-1">
                   {c.issuer} · {c.year}
                 </p>
+                {c.note && <p className="text-xs text-yellow-500/90 mt-1">{c.note}</p>}
               </div>
               <ArrowUpRight className="w-4 h-4 shrink-0 text-neutral-400 group-hover:text-current" />
             </div>

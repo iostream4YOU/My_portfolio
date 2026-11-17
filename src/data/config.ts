@@ -15,6 +15,8 @@ const config = {
     "Power BI",
     "LLM",
     "AI agents",
+    "Oracle Agentic AI certified",
+    "Databricks Generative AI",
     "LangChain",
     "LangGraph",
     "React",
