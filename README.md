@@ -8,6 +8,7 @@ I'm a 2026 B.Tech graduate in Computer Science and Engineering (AI & ML) from Wo
 
 | Project | What it is | Try it |
 |---|---|---|
+| Sightline | Real-time 3D ticketing for movies, concerts and football: fly into the venue, pick your exact seat and see its view before you book (three.js, 48k instanced seats, TMDB films via a serverless proxy) | [Live](https://sightline3d.vercel.app) · [Repository](https://github.com/iostream4YOU/sightline) |
 | Blinkit Sales Analytics | My Power BI analysis of 8,523 grocery items, rebuilt as an interactive web dashboard with live filters | [Open the dashboard](https://rishikeshakkalwar.vercel.app/projects/blinkit) |
 | Buy or Wait? | LLM affordability agent built in 24 hours at HackerRank Orchestrate 2026; 24/25 on status, 25/25 on payment method | [Repository](https://github.com/iostream4YOU/hackerrank-orchestrate-buy-or-wait) |
 | Coding Ducks | Coding practice platform: problems, UI battles, contests and a code playground | [Live](https://codingducksbyrishi.vercel.app/) |

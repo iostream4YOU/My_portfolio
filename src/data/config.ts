@@ -1,7 +1,7 @@
 const config = {
   title: "Rishikesh Akkalwar | Software Engineer · Backend, Data & AI",
   description: {
-    long: "Portfolio of Rishikesh Akkalwar, a 2026 B.Tech CSE (AI & ML) graduate who builds backend services, data pipelines and LLM tools. See a live interactive Blinkit sales dashboard, the Buy or Wait? LLM agent from HackerRank Orchestrate 2026, a reverse-engineered Chrome extension, Coding Ducks and CodeRoom, plus internship work on a FastAPI audit platform for a US healthcare client.",
+    long: "Portfolio of Rishikesh Akkalwar, a 2026 B.Tech CSE (AI & ML) graduate who builds backend services, data pipelines and LLM tools. See Sightline, a real-time 3D ticketing site where you preview the view from your exact seat, a live interactive Blinkit sales dashboard, the Buy or Wait? LLM agent from HackerRank Orchestrate 2026, a reverse-engineered Chrome extension, Coding Ducks and CodeRoom, plus internship work on a FastAPI audit platform for a US healthcare client.",
     short:
       "Software engineer building backend services, data pipelines and LLM tools. Live demos, real projects, verifiable certifications.",
   },
@@ -19,6 +19,9 @@ const config = {
     "LangGraph",
     "React",
     "Next.js",
+    "Three.js",
+    "WebGL",
+    "3D web",
     "Hyderabad",
     "fresher",
   ],

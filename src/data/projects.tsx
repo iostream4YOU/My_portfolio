@@ -33,6 +33,11 @@ import {
   SiThreedotjs,
   SiTypescript,
   SiVuedotjs,
+  SiWebgl,
+  SiOpengl,
+  SiHtml5,
+  SiVercel,
+  SiThemoviedatabase,
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 const BASE_PATH = "/assets/projects-screenshots";
@@ -285,6 +290,42 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiGooglechrome />,
   },
+  threejs: {
+    title: "Three.js",
+    bg: "black",
+    fg: "white",
+    icon: <SiThreedotjs />,
+  },
+  webgl: {
+    title: "WebGL",
+    bg: "black",
+    fg: "white",
+    icon: <SiWebgl />,
+  },
+  glsl: {
+    title: "GLSL shaders",
+    bg: "black",
+    fg: "white",
+    icon: <SiOpengl />,
+  },
+  html: {
+    title: "HTML / ES modules",
+    bg: "black",
+    fg: "white",
+    icon: <SiHtml5 />,
+  },
+  vercel: {
+    title: "Vercel Functions",
+    bg: "black",
+    fg: "white",
+    icon: <SiVercel />,
+  },
+  tmdb: {
+    title: "TMDB API",
+    bg: "black",
+    fg: "white",
+    icon: <SiThemoviedatabase />,
+  },
 };
 export type Project = {
   id: string;
@@ -298,6 +339,106 @@ export type Project = {
   live: string;
 };
 const projects: Project[] = [
+  {
+    id: "sightline",
+    category: "Real-time 3D · Ticketing",
+    title: "Sightline",
+    src: "/assets/projects-screenshots/sightline/cover.png",
+    screenshots: ["cover.png"],
+    live: "https://sightline3d.vercel.app/",
+    github: "https://github.com/iostream4YOU/sightline",
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.threejs,
+        PROJECT_SKILLS.webgl,
+        PROJECT_SKILLS.glsl,
+        PROJECT_SKILLS.js,
+        PROJECT_SKILLS.html,
+      ],
+      backend: [PROJECT_SKILLS.vercel, PROJECT_SKILLS.node, PROJECT_SKILLS.tmdb],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            See the view from your exact seat before you book
+          </TypographyP>
+          <TypographyP className="font-mono">
+            Every stadium and cinema is designed around sightlines, the line of
+            sight from each seat to the stage. Sightline renders yours: you fly
+            into a live 3D venue, pick a stand, block, row and seat, and the
+            ticket shows the real view from that seat. Movies, concerts and
+            football, all in the browser with no build step, priced in ₹.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} liveLabel="Open the live site" />
+          <TypographyH3 className="my-4 mt-8">One shot from the sky to your seat</TypographyH3>
+          <p className="font-mono mb-2">
+            A stadium written entirely in code: a three-tier bowl, 48,000
+            individually bookable seats drawn as instanced meshes, skyboxes, a
+            membrane roof and a park around it. Hover a stand and it lights up
+            with its price; one click flies the camera down to it in a single
+            continuous move, with no cuts.
+          </p>
+          <SlideShow
+            images={[
+              `${BASE_PATH}/sightline/stadium-overview.jpg`,
+              `${BASE_PATH}/sightline/stadium-block.jpg`,
+            ]}
+          />
+          <TypographyH3 className="my-4 mt-8">The ticket shows your view</TypographyH3>
+          <p className="font-mono mb-2">
+            Pick a seat and the seats around it go grey one by one. The ticket&apos;s
+            &quot;Your view&quot; photo is rendered live from that seat&apos;s eye
+            position. Upgrade to a skybox and pick a leather armchair to see the
+            pitch from the box.
+          </p>
+          <SlideShow
+            images={[
+              `${BASE_PATH}/sightline/stadium-ticket.jpg`,
+              `${BASE_PATH}/sightline/skybox.jpg`,
+              `${BASE_PATH}/sightline/skybox-view.jpg`,
+            ]}
+          />
+          <TypographyH3 className="my-4 mt-8">Concert mode: book the barricade</TypographyH3>
+          <p className="font-mono mb-2">
+            The pitch becomes a show floor in front of an animated LED stage,
+            split into barricaded zones on each side. The closer to the stage,
+            the higher the price: Front Barricade, Fan Pit, Floor and Back Floor.
+            Each zone shows the view from where you&apos;d stand.
+          </p>
+          <SlideShow images={[`${BASE_PATH}/sightline/concert-floor.jpg`]} />
+          <TypographyH3 className="my-4 mt-8">A cinema you can walk into</TypographyH3>
+          <p className="font-mono mb-2">
+            Three hall types (Multiplex, Giant Screen, Gold Lounge) with
+            Classic, Prime and Recliner sections. It books seats side by side,
+            and the recliners actually recline when you hover them. A GLSL
+            trailer on the screen lights the whole auditorium, and lightning in
+            the film flashes the room. Live films, posters and Indian
+            certificates come from the TMDB API through a serverless proxy, so
+            the key never reaches the browser.
+          </p>
+          <SlideShow
+            images={[
+              `${BASE_PATH}/sightline/cinema-picker.jpg`,
+              `${BASE_PATH}/sightline/cinema-seats.jpg`,
+              `${BASE_PATH}/sightline/cinema-ticket.jpg`,
+              `${BASE_PATH}/sightline/cinema-recliners.jpg`,
+              `${BASE_PATH}/sightline/cinema-view.jpg`,
+            ]}
+          />
+          <TypographyH3 className="my-4 mt-8">Built to stay smooth</TypographyH3>
+          <p className="font-mono mb-2">
+            Frustum-culled seat chunks, a high-detail level of detail only near
+            the camera, shadows re-rendered only when the view changes, and a
+            GPU benchmark behind the loader that picks the best quality that
+            holds 60fps. Image-based lighting from an HDRI sky, scanned leather
+            and concrete, and sun shadows that follow the camera.
+          </p>
+          <SlideShow images={[`${BASE_PATH}/sightline/landing.jpg`]} />
+        </div>
+      );
+    },
+  },
   {
     id: "blinkit",
     category: "Live data dashboard",
